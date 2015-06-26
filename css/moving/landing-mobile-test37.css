@@ -1,0 +1,730 @@
+/* Reset */
+html, body, p, em, span, div, section, article, header,
+h1, h2, h3, h4, h5, h6 { 
+	margin: 0;
+	padding: 0;
+}
+
+/*============================================ 
+Moving Mobile-Test-37 Layout
+=============================================*/
+
+html, body {
+	height:100%;
+	font-family:lato;
+}
+a { 
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	min-height: 93.0333%;
+	padding:0 20px;
+	margin-bottom: -40px; /* Equal to footer height (negative) for sticky footer */
+}
+.container:after{
+	content:"";
+	display:block;
+}
+
+body {
+	background: #1c8cbd;
+	color:#fff;
+}
+
+header {
+	background-color: #606060;
+	height:50px;
+}
+header .logo-1 {
+	float:left;
+}
+header .logo-1 img {
+	padding:10px 0;
+	width:192px;
+	height:auto;
+	position: relative;
+	left:10px;
+}
+
+header .phone {
+	float:right;
+}
+header .phone img{
+	height:33px;
+	position: relative;
+	top:10px;
+	right:10px;
+}
+
+section {
+	position:relative;
+	left:0;
+	clear:both;
+}
+
+footer, .container:after {
+	height:40px;
+}
+
+footer {
+	clear:both;
+	padding:10px 0;
+	background-color:#606060;
+	text-align: center;
+}
+
+
+/*============================================ 
+Slides Layout
+=============================================*/
+
+/* Slide Control */
+
+#slide-1 { display:none; }
+#slide-2 { display:none; }
+#slide-3 { display:none; }
+#slide-4 { display:none; }
+
+/* Slides CSS */
+
+#slide-1 .banner {
+	float:right;
+}
+#slide-1 .banner-text {
+	float:left;
+	width:50%;
+}
+
+img.mover {
+	height:90px;
+	width:90px;
+	position: relative;
+	top: 10px;
+	border:4px solid #fff;
+	border-radius:50px;
+	box-shadow: 0px 0px 16px 0px #8cc;
+	float: left;
+}
+
+.form-area {
+	clear:both;
+	padding-top:30px;
+	margin:0 auto;
+	width:100%;
+	font-size: 22px;
+}
+
+.form-area input, .form-area select {
+	width:100%;
+	height: 52px;
+	margin:10px 0;
+	border:0px;
+	border-radius: 5px;
+}
+
+select, input.zip {
+	font-size:18px;
+	color:#3086AE;
+	padding-left:10px;
+}
+
+.form-area ::-webkit-input-placeholder {
+	padding-left:10px;
+	font-size:16px;
+	color: #3086AE;
+	font-weight: 700;
+}
+
+input.zip {
+	width:50%;
+}
+
+/*.zipfinder {
+	background: none;
+	border: none;
+	background-image: url(../../img/bvl_mbl_ziphelp.png);
+	background-size: 20px 20px;
+	height: 36px;
+	width: 42%;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: 3% 50%;
+}
+*/
+input[type="submit"] {
+	font-size: 1.5em;
+	color: #FFF;
+	background-color: #79c000;
+	font-weight: 700;
+}
+
+.legal {
+	padding: 10px 0;
+	margin-bottom:10px;
+}
+
+.legal > div {
+	float:left;
+	width:30%;
+	font-size: 13px;
+}
+
+.legal > div:last-child{
+	text-align: right;
+}
+.norton img {
+	width:50px;
+	height:auto;
+}
+.privacy {
+	position: relative;
+	left:10px;
+	text-align: center;
+}
+
+.privacy p:first-child {
+	border-bottom: 1px solid white;
+}
+
+.burger {
+	position: relative;
+	left: 10px;
+	top:5px;
+	text-align: right;
+/*	margin: 5px auto 0;
+	padding: 9px 10px 6px;*/
+}
+.burger img {
+	width:20px;
+	height:20px;
+}
+
+input.half {
+	width:49%;
+}
+
+.shelf {
+	display: none;
+	background: #fff;
+	color:#000;
+}
+
+#slide-2 {
+	text-align: center;
+}
+#slide-2 .loader {
+	width:100%;
+}
+
+#slide-2 .counter {
+	color: #a0e3ff;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+#slide-3 .operator {
+	height: 70px;
+	float: left;
+}
+
+#slide-3 h2 {
+	position: relative;
+	left: 10px;
+}
+
+/*============================================ 
+Errors 
+=============================================*/
+/*input, select{
+	-webkit-appearance: none;
+	border:2px solid white; 
+}*/
+
+input.error{
+	border:3px solid #d32226 !important;
+}
+
+select.error{
+	border:3px solid #d32226;
+}
+
+/*============================================ 
+Move-Size-Picker
+=============================================*/
+
+.move-size-picker{
+	position:absolute;
+	top:-50px;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:99;
+}
+
+.move-size-picker .background{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:100;
+	background-color:#1c8cbd;
+}
+
+.move-size-header{
+	color:white;
+	font-size:18px;
+	height:50px;
+}
+
+.move-size-header .close-btn{
+	float:right;
+	width:50px;
+	height:50px;
+	background-image:url("../../img/zf_close.png");
+	background-repeat:no-repeat;
+	background-size:15px 15px;
+	background-position:right center;
+}
+.move-size-picker.active{
+	display:block;
+}
+
+.move-size-picker-wrap{
+	position:relative;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:auto;
+	margin:4%;
+	padding:2px 3%;
+	z-index:1000;
+}
+
+.move-size-picker-wrap .one-option-wrap{
+	position:relative;
+	z-index:1001;
+	padding:5px 0px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	text-align:left;
+	background-color:white;
+	margin:5px 0;
+}
+
+.move-size-picker-wrap .one-option-wrap.selected{
+	background-color:#9ddbf6;
+}
+
+.move-size-picker-wrap .one-option-wrap .text{
+	color:#0e5c7e;
+	padding:11px 0 11px 30px;
+	font-size:18px;
+}
+
+/*============================================ 
+Pikaday
+=============================================*/
+@charset "UTF-8";
+
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ */
+.pika-single {
+    z-index: 9999;
+    display: block;
+    position: relative;
+    color: #333;
+    background: #fff;
+    border: 1px solid #4BAAD3;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+clear child float (pika-lendar), using the famous micro clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.pika-single:before,
+.pika-single:after {
+    content: " ";
+    display: table;
+}
+.pika-single:after { clear: both }
+.pika-single { *zoom: 1 }
+
+.pika-single.is-hidden {
+    display: none;
+}
+
+.pika-single.is-bound {
+    position: absolute;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0);
+}
+
+.pika-lendar {
+    float: left;
+    width: 95.7%;
+    margin: 8px;
+}
+
+.pika-title {
+    position: relative;
+    text-align: center;
+	background-color:#4BAAD3;
+	padding-bottom:14px;
+	background: -webkit-linear-gradient(#4BAAD3,#025172); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4BAAD3, #025172); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#4BAAD3, #025172); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4BAAD3, #025172); /* Standard syntax */
+}
+
+.pika-label {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+	top: 6px;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    /*background-color: #fff;*/
+	color:white;
+}
+.pika-title select {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9998;
+    margin: 0;
+    left: 0;
+    top: 5px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.pika-prev,
+.pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    /* hide text using text-indent trick, using width value (it's enough) */
+    text-indent: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+    opacity: 1;
+    *position: absolute;
+    *top: 0;
+}
+
+.pika-prev:hover,
+.pika-next:hover {
+    opacity: 1;
+}
+
+.pika-prev,
+.is-rtl .pika-next {
+    float: left;
+    background-image: url("../../img/pika-prev.png");
+    *left: 0;
+}
+
+.pika-next,
+.is-rtl .pika-prev {
+    float: right;
+    background-image: url("../../img/pika-next.png");
+    *right: 0;
+}
+
+.pika-prev.is-disabled,
+.pika-next.is-disabled {
+    cursor: default;
+    opacity: 0;
+}
+
+.pika-select {
+    display: inline-block;
+    *display: inline;
+}
+
+.pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.pika-table th,
+.pika-table td {
+    width: 14.285714285714286%;
+    padding: 0;
+}
+
+.pika-table th {
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pika-button {
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    color: #0e5c7e;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    background: #f5f5f5;
+}
+
+.pika-week {
+    font-size: 11px;
+    color: #999;
+}
+
+.is-today .pika-button {
+    color: #33aaff;
+    font-weight: bold;
+}
+
+.is-selected .pika-button {
+    color: #fff;
+    font-weight: bold;
+    background: #33aaff;
+    box-shadow: inset 0 1px 3px #178fe5;
+    border-radius: 3px;
+}
+.calendar-header .close-btn{
+	position:fixed;
+	right:0;
+	background-image: url("../../img/zf_close.png");
+	background-repeat:no-repeat;
+	background-size:15px 15px;
+	background-position: center center;
+}
+.is-disabled .pika-button {
+    pointer-events: none;
+    cursor: default;
+    color: #999;
+    opacity: .3;
+}
+
+.pika-button:hover {
+    background: #9ddbf6 !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+/* styling for abbr */
+.pika-table abbr {
+    border-bottom: none;
+    cursor: help;
+}
+
+/*============================================ 
+Calendar Wrap
+=============================================*/
+
+/*.calendar-holder-wrap{
+	position:absolute;
+	top:-50px;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:99;
+}
+*/
+.calendar-holder-wrap{
+	display: none;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:100;
+	background-color:#1c8cbd;
+}
+
+.calendar-header .close-btn{
+	position:fixed;
+	right:0;
+	background-image: url("../../img/zf_close.png");
+	background-repeat:no-repeat;
+	background-size:15px 15px;
+	background-position: center center;
+}
+
+/*============================================ 
+ZipFinder
+=============================================*/
+
+#zipfinder{
+	height:100%;
+	overflow-y:hidden;
+	display: none;
+}
+
+.zipfinder{
+	/*height:100%;*/
+}
+.zipfinder .state, .zipfinder .city{
+	padding: 15px;
+	font-size:18px;
+	color:#0e5c7e;
+}
+
+.zipfinder .state.clicked, .zipfinder .city.clicked{
+	background-color:#9ddbf6;
+}
+
+.zf-state, .zf-city{
+	height:100%;
+}
+
+.zf-state-head, .zf-city-head{
+	text-align:center;
+	background-color:#4baad3;
+	color:white;
+	padding:20px 0;
+	position:relative;
+	z-index:100;
+	right:0;
+	left:0;
+	top:0;
+	background: -webkit-linear-gradient(#4baad3, #025172); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4baad3, #025172); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#4baad3, #025172); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4baad3, #025172); /* Standard syntax */
+}
+
+.zf-state-holder{
+	position:relative;
+	height:83%;
+	overflow-y:auto;
+}
+
+.zf-state-head span, .zf-city-head .zf-close{
+	width:25px;
+	height:25px;
+	position:absolute;
+	right:12px;
+	background-image: url("../../img/zf_close.png");
+	background-repeat:no-repeat;
+	background-size:20px 20px;
+	background-position: center center;
+}
+
+.zf-city-head .zf-go-back{
+	position:absolute;
+	background-image: url("../../img/zf_go_back.png");
+	background-repeat:no-repeat;
+	background-position: center center;
+	right:auto;
+	left:12px;
+	width:25px;
+	height:25px;
+}
+.zf-city-statename{
+	position:relative;
+	right:10px;
+/*	background-image:url(); */
+}
+.zf-alphabet{
+	position:relative;
+	background-color:#004f87;
+	color:white;
+	padding:10px;
+	left:0;
+	right:0;
+	z-index:999;
+}
+
+
+.zf-alphabet .scrollToSelected{
+	display:inline-block;
+	font-size:14px;
+	padding:3px 4px;
+}
+
+@media (min-width:374px) and (max-width:415px){
+	.zf-alphabet .scrollToSelected{
+		font-size:18px;
+		padding:1px 4px;
+	}
+}
+
+.zipfinder .state.tapped, .zipfinder .city.tapped{
+	background-color:#9ddbf6;
+}
+
+.zf-alphabet .scrollToSelected.selected{
+	background-color:#34a7f8;
+	color:white;
+}
+.zf-city{
+	display:none;
+}
+
+.zf-city-holder{
+	position:relative;
+	height:70%;
+	overflow-y:auto;
+}
+
+.zf-loader{
+	display:none;
+	position:fixed;
+	width:70px;
+	height:70px;
+	left:50%;
+	top:50%;
+	margin-top:-15px;
+	margin-left:-40px;
+	z-index:999;
+	background-image:url("../../img/zf-loader.gif");
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: 50% 50%;
+}
+
+/*============================================ 
+Hacks
+=============================================*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+ 
+.clearfix:after {
+	clear: both;
+}
+ 
+.clearfix {
+	*zoom: 1;
+}
